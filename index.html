@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excuse Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-4">Excuse Generator</h1>
+        <div class="row justify-content-center">
+<!-- Texto para "Who" -->
+            <div class="col-12 my-4">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text px-5">Who</span>
+                    </div>
+                    <input type="text" id="who" class="form-control" aria-label="Who">
+                </div>
+            </div>
+<!-- Texto para "When" -->
+            <div class="col-12 my-4">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text px-5">When</span>
+                    </div>
+                    <input type="text" id="when" class="form-control" aria-label="When">
+                </div>
+            </div>
+<!-- Texto para "What" -->
+            <div class="col-12 my-4">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text px-5">What</span>
+                    </div>
+                    <input type="text" id="what" class="form-control" aria-label="What">
+                </div>
+            </div>
+<!-- Texto para "Action" -->
+            <div class="col-12 my-4">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text px-5">Action</span>
+                    </div>
+                    <input type="text" id="action" class="form-control" aria-label="Action">
+                </div>
+            </div>
+<!-- Enviar y generar excusas -->
+            <div class="col-12 my-4">
+                <button type="button" id="sendExcuse" class="btn btn-success btn-lg btn-block">Send Excuse</button>
+                <button type="button" id="generateExcuse" class="btn btn-secondary btn-lg btn-block">Generate Excuse</button>
+            </div>
+<!-- Excusa generada -->
+            <div class="col-12 my-4">
+                <p id="excuseOutput" class="text-center"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
